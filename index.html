@@ -26,11 +26,13 @@
   </div>
   <div class="info">
     <header>
-      <p>This is not a real online service! You know you need something
-      like this in your life to help you realize your deepest dreams.
-      Sign up <em>now</em> to get started.</p>
+      <div class="text-container">
+        <p>This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest dreams.
+        Sign up <em>now</em> to get started.</p>
 
-      <p>You <em>know</em> you want to.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
     </header>
     <section class="form">
       <h2>Let's do this!</h2>
@@ -42,7 +44,7 @@
             required autocomplete="given-name">
           </li>
           <li>
-            <label for="last-name">Last Name</label>
+            <label for="last-name">Last Name (optional)</label>
             <input type="text" name="last-name" id="last-name" autocomplete="family-name">
           </li>
           <li>
@@ -50,13 +52,14 @@
             <input type="email" name="email" id="email" required autocomplete="email">
           </li>
           <li>
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number (optional)</label>
             <input type="tel" name="phone" id="phone" autocomplete="tel">
           </li>
           <li>
             <label for="password" class="error">Password</label>
             <input type="password" name="password" id="password"
             required autocomplete="new-password">
+            <span></span>
           </li>
           <li>
             <label for="conf-pas" class="error">Confirm Password</label>

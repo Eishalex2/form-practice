@@ -88,6 +88,7 @@ ul {
 
 label {
   display: block;
+  margin-bottom: 2px;
 }
 
 input[type="text"],
@@ -100,8 +101,12 @@ input[type="tel"] {
   line-height: 1.2em;
 }
 
-.error ~ input {
+input[type="password"]:invalid {
   border: 1px solid red;
+}
+
+input[type="password"]:valid {
+  border: 1px solid green;
 }
 
 button {
@@ -113,4 +118,26 @@ button {
   font-weight: bold;
   margin-top: 20px;
   box-shadow: 2px 3px 5px #adc3bb;
+}
+
+section.submit p a {
+  color: #779b83;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-container {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8% 25% 3% 0;
+}
+
+section.form {
+  padding: 1px 0;
+}
+
+li input:invalid + span::after {
+  content: "*Passwords do not match";
+  display: block;
+  color: red;
 }
