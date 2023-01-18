@@ -60,14 +60,9 @@ body {
   display: flex;
 }
 
-header,
-section.submit {
-  background-color: lightcyan;
-}
-
 div.info {
   height: 100vh;
-  background-color: lightcyan;
+  background-color: #edf3e8;
 }
 
 header > *,
@@ -101,8 +96,21 @@ input[type="password"],
 input[type="tel"] {
   border-radius: 5px;
   border: 1px solid #E5E7EB;
+  padding: .3em .3em .3em .5em;
+  line-height: 1.2em;
 }
 
 .error ~ input {
   border: 1px solid red;
+}
+
+button {
+  background-color: #779b83;
+  padding: 12px 35px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 2px 3px 5px #adc3bb;
 }
