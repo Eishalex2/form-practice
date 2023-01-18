@@ -140,3 +140,9 @@ li input:invalid + .error::after {
   content: "*Passwords do not match";
   color: red;
 }
+
+button[type="submit"]:focus-visible {
+  outline: none;
+  background-color: #52715d;
+  box-shadow: 2px 3px 5px #779b83;
+}
