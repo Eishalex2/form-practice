@@ -33,12 +33,12 @@
       <p>You <em>know</em> you want to.</p>
     </header>
     <section class="form">
-      <p>Let's do this!</p>
+      <h2>Let's do this!</h2>
       <form method="post" action="">
         <ul>
           <li>
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" required>
           </li>
           <li>
             <label for="last-name">Last Name</label>
@@ -46,19 +46,19 @@
           </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </li>
           <li>
             <label for="phone">Phone Number</label>
             <input type="tel" name="phone" id="phone">
           </li>
           <li>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <label for="password" class="error">Password</label>
+            <input type="password" name="password" id="password" required>
           </li>
           <li>
-            <label for="conf-pas">Confirm Password</label>
-            <input type="password" name="conf-pas" id="conf-pas">
+            <label for="conf-pas" class="error">Confirm Password</label>
+            <input type="password" name="conf-pas" id="conf-pas" required>
           </li>
     </section>
     <section class="submit">
